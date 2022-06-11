@@ -1,0 +1,27 @@
+{
+  "name": "employee_tracker",
+  "version": "1.0.0",
+  "description": "A SQL application that tracks employees and departments",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zurisha7/Employee_tracker.git"
+  },
+  "author": "Andrea West",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zurisha7/Employee_tracker/issues"
+  },
+  "homepage": "https://github.com/zurisha7/Employee_tracker#readme",
+  "devDependencies": {
+    "express": "^4.18.1",
+    "inquirer": "^8.2.4"
+  },
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "mysql2": "^2.3.3"
+  }
+}
