@@ -1,5 +1,6 @@
 const mysql2 = require('mysql2');
 const inquirer = require('inquirer');
+const viewAllEmployees = require('./routes/apiRoutes/employeeRoutes');
 
 const userPrompt = async () => {
     return inquirer.prompt([
@@ -43,7 +44,7 @@ const userPrompt = async () => {
       viewAllManagers();
     }
     else if(choices === 'View all employees'){
-      viewAllManagers();
+      viewAllEmployees();
     }
     else if(choices === 'View employees by role'){
       employeesByRole();
@@ -98,3 +99,5 @@ const userPrompt = async () => {
     }
   })  
     };
+
+    module.exports = userPrompt;
